@@ -132,6 +132,65 @@ body {
 [class*="col-"] {
   width: 100%;
 }
+      
+      .grid-container {
+  display: grid;
+  grid-template-columns: 100% ;
+  grid-template-rows: 100px 30px;
+  grid-gap: 10px;
+  background-color: grey;
+  padding: 10px;
+  }
+.grid1 {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: 400px 30px;
+  grid-gap: 10px;
+  background-color: purple;
+  padding: 10px;
+}
+
+
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    /* Center icons
+    justify-content:center; */
+}
+
+.social-icons a {
+    border: solid 2px #000;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    display: grid;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0.4;
+    transition: all ease 0.3s;
+    font-size: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 0;
+    justify-content: center;
+}
+
+.social-icons.social-icons-white a {
+    opacity: 0.6;
+    border-color: #fff;
+}
+
+.social-icons a:hover {
+    opacity: 1 !important;
+}
+
+.social-icons a img {
+    max-height: 17px;
+    align-self:center;
+    display:block;
+    margin:auto;
+}
    </style>
       <ul>
   <li><a href="#contact">Contact</a></li>
@@ -240,6 +299,23 @@ body {
     </svg>
 
   </div> <!--EARTH END-->  
+    </div>
+      <div class="grid1">
+    </div>
+    <div class="grid-container">
+    <div class="social-icons">
+  <a href="#" target="_blank"><img src="https://seedlogix.com/hubs/themes/clients/images/facebook-white.svg">Facebook</a>
+        
+        <!-- YouTube -->
+        <a href="#" target="_blank"><img src="https://seedlogix.com/hubs/themes/clients/images/youtube-white.svg">YouTube</a>
+        
+        <!-- Google -->
+        <a href="#" target="_blank"><img src="https://seedlogix.com/hubs/themes/clients/images/google-white.svg">Google</a>
+        
+     
+        
+        
+    </div>
     
  
 
