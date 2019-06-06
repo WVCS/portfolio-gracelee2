@@ -110,8 +110,8 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 100% ;
-  grid-template-rows: 100px 30px;
-  grid-gap: 10px;
+  grid-template-rows: 40vh 14vw;
+  grid-gap: 4vw;
   background-color: grey;
   padding: 10px;
 	      
@@ -119,8 +119,8 @@ body {
 .grid1 {
   display: grid;
   grid-template-columns: auto ;
-  grid-template-rows: 400px 30px;
-  grid-gap: 10px;
+  grid-template-rows:100vh 14vw;
+  grid-gap: 4vw;
   background-color: #88D9E6;
  padding: 20px;
 
@@ -129,7 +129,7 @@ body {
 .grid2 {
   display: grid;
   grid-template-columns: auto ;
-  grid-template-rows: 600px 30px;
+  grid-template-rows: 400vh 30vw;
   grid-gap: 10px;
  padding: 20px;
 
@@ -189,218 +189,18 @@ width:100vh;
 }
 	    
 #page1{
-height: 400px;
+height: 100vh;
 }
 	
 #page2{
-height: 600px;
+height: 200vh;
 	    }
 	    
 body{
 height:100%;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-.demo {
-  width: 100vw;
-  height: 100vh;
-  background: #ccc;
-  overflow: hidden;
-}
-.demo__lay {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.demo__lay-inner {
-  width: 100%;
-  height: 100%;
-  padding: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease-out;
-  will-change: transform;
-}
-.demo__lay-3-1-picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90vw;
-  height: 90vh;
-  transition: all 0.4s ease-out;
-  will-change: transform;
-  overflow: hidden;
-  cursor: pointer;
-}
-.demo__lay-3-1-picture:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  z-index: 1;
-  content: "";
-  opacity: 0.6;
-  transition: all 0.4s linear;
-  will-change: opacity;
-}
-.demo__lay-3-1-picture--1 {
-  border-right: 3px solid white;
-  border-bottom: 3px solid white;
-  -webkit-transform: translate3d(-40vw, -40vh, 0);
-          transform: translate3d(-40vw, -40vh, 0);
-}
-.demo__lay-3-1-picture--1 .demo__lay-inner {
-  background-image: earth.jpg;
-}
-.demo__lay-3-1-picture--1.active {
-  -webkit-transform: none;
-          transform: none;
-}
-.demo__lay-3-1-picture--1.active .demo__lay-inner {
-  -webkit-transform: none;
-          transform: none;
-}
-.demo__lay-3-1-picture--1.inactive-2 {
-  -webkit-transform: translate3d(0, -80vh, 0);
-          transform: translate3d(0, -80vh, 0);
-}
-.demo__lay-3-1-picture--1.inactive-2 .demo__lay-inner {
-  -webkit-transform: translate3d(0, 20vh, 0);
-          transform: translate3d(0, 20vh, 0);
-}
-.demo__lay-3-1-picture--1.inactive-3 {
-  -webkit-transform: translate3d(-80vw, -40vh, 0);
-          transform: translate3d(-80vw, -40vh, 0);
-}
-.demo__lay-3-1-picture--1.inactive-3 .demo__lay-inner {
-  -webkit-transform: translate3d(20vw, 20vh, 0);
-          transform: translate3d(20vw, 20vh, 0);
-}
-.demo__lay-3-1-picture--2 {
-  border-right: 3px solid white;
-  border-top: 3px solid white;
-  -webkit-transform: translate3d(-40vw, 50vh, 0);
-          transform: translate3d(-40vw, 50vh, 0);
-}
-.demo__lay-3-1-picture--2 .demo__lay-inner {
-  background-image: epcot.png;
-}
-.demo__lay-3-1-picture--2.active {
-  -webkit-transform: translate3d(0, 10vh, 0);
-          transform: translate3d(0, 10vh, 0);
-}
-.demo__lay-3-1-picture--2.active .demo__lay-inner {
-  -webkit-transform: none;
-          transform: none;
-}
-.demo__lay-3-1-picture--2.inactive-1 {
-  -webkit-transform: translate3d(0, 90vh, 0);
-          transform: translate3d(0, 90vh, 0);
-}
-.demo__lay-3-1-picture--2.inactive-1 .demo__lay-inner {
-  -webkit-transform: translate3d(0, -20vh, 0);
-          transform: translate3d(0, -20vh, 0);
-}
-.demo__lay-3-1-picture--2.inactive-3 {
-  -webkit-transform: translate3d(-80vw, 50vh, 0);
-          transform: translate3d(-80vw, 50vh, 0);
-}
-.demo__lay-3-1-picture--2.inactive-3 .demo__lay-inner {
-  -webkit-transform: translate3d(20vw, -20vh, 0);
-          transform: translate3d(20vw, -20vh, 0);
-}
-.demo__lay-3-1-picture--3 {
-  height: 100%;
-  border-left: 3px solid white;
-  -webkit-transform: translate3d(50vw, 0, 0);
-          transform: translate3d(50vw, 0, 0);
-}
-.demo__lay-3-1-picture--3 .demo__lay-inner {
-  background-image: url(https://kiyutink.github.io/moscow/moscow1.jpg);
-}
-.demo__lay-3-1-picture--3.active {
-  -webkit-transform: translate3d(10vw, 0, 0);
-          transform: translate3d(10vw, 0, 0);
-}
-.demo__lay-3-1-picture--3.active .demo__lay-inner {
-  -webkit-transform: none;
-          transform: none;
-}
-.demo__lay-3-1-picture--3.inactive-1 {
-  -webkit-transform: translate3d(90vw, 0, 0);
-          transform: translate3d(90vw, 0, 0);
-}
-.demo__lay-3-1-picture--3.inactive-1 .demo__lay-inner {
-  -webkit-transform: translate3d(-20vw, 0, 0);
-          transform: translate3d(-20vw, 0, 0);
-}
-.demo__lay-3-1-picture--3.inactive-2 {
-  -webkit-transform: translate3d(90vw, 0, 0);
-          transform: translate3d(90vw, 0, 0);
-}
-.demo__lay-3-1-picture--3.inactive-2 .demo__lay-inner {
-  -webkit-transform: translate3d(-30vw, 0, 0);
-          transform: translate3d(-30vw, 0, 0);
-}
-.demo__content {
-  max-width: 80%;
-  padding: 10px;
-  text-align: center;
-  font-family: "Montserrat", "Helvetica", sans-serif;
-  line-height: 1.3;
-  font-size: 26px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-  transition: all 0.25s ease-out;
-  transition-delay: 0.25s;
-}
-.demo__content p {
-  font-size: 15px;
-}
-.demo__content a {
-  color: white;
-}
-.demo__content a:hover {
-  color: #FFA4A4;
-}
-
-.active:after {
-  opacity: 0;
-  pointer-events: none;
-}
-.active .demo__content {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-  cursor: auto;
-}
-
-.inactive:after {
-  opacity: 0.7;
-  pointer-events: auto;
-}
-.inactive .demo__content {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 35px, 0);
-          transform: translate3d(0, 35px, 0);
-  transition-delay: 0s;
-}
-
-.inanimatable {
-  transition: none;
-}
 
 	    
    </style>
@@ -528,34 +328,7 @@ height:100%;
 	  <div class="grid2">
 		  <div id="page2">
 			  <a id="Pictures" class="smooth"></a>
-			  <div class="demo">
-  <div class="demo__lay-3-1 demo__lay">
-    <div inFrameIndex="1" class="demo__lay-3-1-picture demo__lay-3-1-picture--1 inactive">
-      <div class="demo__lay-inner">
-        <div class="demo__content">
-           Whatever
-        </div>
-      </div>
-    </div>
-    <div inFrameIndex="2" class="demo__lay-3-1-picture demo__lay-3-1-picture--2 inactive">
-      <div class="demo__lay-inner">
-        <div class="demo__content">
-        Something 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia fugit magnam, atque architecto. Officia nisi possimus architecto cumque neque eius magni vero tempora harum laboriosam, cupiditate, officiis expedita suscipit.  
-        </p>  
-        </div>
-      </div>
-    </div>
-    <div inFrameIndex="3" class="demo__lay-3-1-picture demo__lay-3-1-picture--3 inactive">
-      <div class="demo__lay-inner">
-        <div class="demo__content">
-          Check out my other <a target="_blank" href="https://codepen.io/kiyutink/"> pens</a> and follow me on <a target="_blank" href="https://twitter.com/kiyutin_k"> twitter</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+			 
 		  </div>
 	    </div>
     <div class="grid-container">
@@ -585,47 +358,7 @@ $('.smooth').on('click', function() {
 });
 </script>
 	 
-<script>
-	"use strict";
 
-$(document).ready(function() {
-
-  var $pic_3_1 = $(".demo__lay-3-1-picture");
-  var curPic = 0;
-  var timeout = null;
-
-  $pic_3_1.on("click", function() {
-    
-    var self = this;
-    curPic = +$(this).attr("inFrameIndex") - 1;
-    
-    $pic_3_1.removeClass("inanimatable");
-    
-    $pic_3_1.removeClass("active inactive inactive-1 inactive-2 inactive-3").addClass("inactive inactive-" + $(self).attr("inFrameIndex"));
-    
-    $(self).addClass("active").removeClass("inactive");
-    
-    clearTimeout(timeout);
-
-    timeout = setTimeout(function() {
-      $pic_3_1.eq(curPic).trigger("click");
-      if (curPic >= 2) curPic = 0;
-      else curPic++;
-    }, 10000);
-  });
-  
-  $(window).on("resize", function() {
-    $pic_3_1.addClass("inanimatable");
-  });
-  
-  //this is here just so it will animate in the iframe and attract more attention :) 
-  setTimeout(function() {
-    $pic_3_1.eq(Math.floor(Math.random() * 3)).trigger("click");
-  }, 400);
-
-});
-	
-	    </script>
     
     
   </body>
