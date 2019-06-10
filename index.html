@@ -138,46 +138,42 @@ position: relative;
 top: -200px;
 	    }
 	    
- .social-icons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    /* Center icons
-    justify-content:center; */
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  background: url('http://testing.mrcoley.co.uk/Images/canvas-dark.png');
+  font-family: Roboto, sans-serif;
 }
 
-.social-icons a {
-    border: solid 2px #000;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    display: grid;
-    border-radius: 50px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    opacity: 0.4;
-    transition: all ease 0.3s;
-    font-size: 0;
-    grid-template-columns: 100%;
-    grid-template-rows: 100% 0;
-    justify-content: center;
+#footer-social-media {
+  list-style: none;
+  margin: 3em;
+  display: flex;
+  justify-content: center;
 }
 
-.social-icons.social-icons-white a {
-    opacity: 0.6;
-    border-color: #fff;
+#footer-social-media li {
+  text-align: center;
+  padding: 20px;
+    
 }
 
-.social-icons a:hover {
-    opacity: 1 !important;
+#footer-social-media span {
+  display: block;
+  color: #656565;
+  font-size: 1em;
+  padding-top: 15px;
 }
 
-.social-icons a img {
-    max-height: 17px;
-    align-self:center;
-    display:block;
-    margin:auto;
+.bevel {
+  text-shadow: 1px 1px 1px #555, -1px -1px 1px #000;
+  color: #202020;
 }
+
+a {
+  text-decoration: none;
+}
+
+
 .center {
   display: block;
   margin-left: auto;
@@ -463,17 +459,14 @@ a:active {text-decoration:underline;}
 		    </div>
 	    </div>
     <div class="grid-container">
-    <div class="social-icons">
-  <a href="#" target="_blank"><img src="https://seedlogix.com/hubs/themes/clients/images/facebook-white.svg">Facebook</a>
-        
-        <!-- YouTube -->
-        <a href="#" target="_blank"><img src="https://seedlogix.com/hubs/themes/clients/images/youtube-white.svg">YouTube</a>
-        
-        <!-- Google -->
-        <a href="#" target="_blank"><img src="https://seedlogix.com/hubs/themes/clients/images/google-white.svg">Google</a>
-														
-         <a href="https://codepen.io/raz2/pen/pBgbra" target="_blank"><img src="https://t6.rbxcdn.com/fb34a9180ae0133d10869fad50dc2e6d"</a>
-      </div>
+    <ul id="footer-social-media">
+        <li><a class="nav-link" href="#" target="_blank" title="Codepen"><i class="fa fa-codepen fa-4x bevel"></i><span>Codepen</span></a></li>
+        <li><a class="nav-link" href="#" target="_blank" title="Linkedin"><i class="fa fa-linkedin fa-4x bevel"></i><span>Linkedin</span></a></li>
+        <li><a class="nav-link" href="#" target="_blank" title="Instagram"><i class="fa fa-instagram fa-4x bevel"></i><span>Instagram</span></a></li>
+        <li><a class="nav-link" href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest-p fa-4x bevel"></i><span>Pinterest</span></a></li>
+        <li><a class="nav-link" href="#" target="_blank" title="LastFM"><i class="fa fa-lastfm fa-4x bevel"></i><span>LastFm</span></a></li>
+        <li><a class="nav-link" href="#" target="_blank" title="Twitter"><i class="fa fa-twitter fa-4x bevel"></i><span>Twitter</span></a></li>
+    </ul>
 	    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
