@@ -138,36 +138,81 @@ position: relative;
 top: -200px;
 	    }
 	    
- @import url('https://fonts.googleapis.com/css?family=Roboto');
+ #socialicons
+{
+width:75%;
+margin:0 auto;
+overflow:auto;
+}
+  
+.socialicon
+{
+width:100px;
+height:100px;
+border-radius:50%;
+overflow:hidden;
+background:#e4e4e4;
+position:relative;
+float:left;
+margin:0px 0px 10px 10px ;
+} 
 
-#footer-social-media {
-  list-style: none;
-  margin: 3em;
-  display: flex;
-  justify-content: center;
+.socialiconcircle1
+{
+width:150px;
+height:150px;
+position:absolute;
+left:0px;
+top:100px;
+-webkit-animation:fill 2s infinite;
+-moz-animation:fill 2s infinite;
+animation:fill 2s infinite;
 }
 
-#footer-social-media li {
-  text-align: center;
-  padding: 20px;
-    
+.socialiconcircle2
+{
+width:94px;
+height:94px;
+border-radius:50%;
+background:#fff;
+position:absolute;
+left:3px;
+top:3px;
 }
 
-#footer-social-media span {
-  display: block;
-  color: #656565;
-  font-size: 1em;
-  padding-top: 15px;
+.icons
+{
+font-size:2em;
+position:absolute;
+left: 33px;
+top: 33px;
+-webkit-animation:iconjump 2s infinite;
+-moz-animation:iconjump 2s infinite;
+animation:iconjump 2s infinite;  
 }
 
-.bevel {
-  text-shadow: 1px 1px 1px #555, -1px -1px 1px #000;
-  color: #202020;
-}
+/* fill color */  
+.dribbblecolor{background:#ea4c89;}
+.facebookcolor{background:#3b5998;} 
+.googlecolor{background:#dd4b39;} 
+.flickrcolor{background:#ff0084;}
+.pinterestcolor{background:#c8232c;}
+.youtubecolor{background:#c4302b;}
+.githubcolor{background:#171515;}
+.linkedincolor{background:#0e76a8;}
+.tumblrcolor{background:#34526f;}
 
-a {
-  text-decoration: none;
-}
+/* icons color */  
+.dribbble{color:#ea4c89!important}
+.facebook{color:#3b5998!important}
+.google{color:#dd4b39!important}                                   
+.flickr{color:#ff0084!important}
+.pinterest{color:#c8232c!important;}
+.youtube{color:#c4302b!important;}  
+.github{color:#171515!important;}  
+.linkedin{color:#0e76a8!important;} 
+.tumblr{color:#34526f!important;}
+
 
 
 .center {
@@ -455,14 +500,62 @@ a:active {text-decoration:underline;}
 		    </div>
 	    </div>
     <div class="grid-container">
-    <ul id="footer-social-media">
-        <li><a class="nav-link" href="#" target="_blank" title="Codepen"><i class="fa fa-codepen fa-4x bevel"></i><span>Codepen</span></a></li>
-        <li><a class="nav-link" href="#" target="_blank" title="Linkedin"><i class="fa fa-linkedin fa-4x bevel"></i><span>Linkedin</span></a></li>
-        <li><a class="nav-link" href="#" target="_blank" title="Instagram"><i class="fa fa-instagram fa-4x bevel"></i><span>Instagram</span></a></li>
-        <li><a class="nav-link" href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest-p fa-4x bevel"></i><span>Pinterest</span></a></li>
-        <li><a class="nav-link" href="#" target="_blank" title="LastFM"><i class="fa fa-lastfm fa-4x bevel"></i><span>LastFm</span></a></li>
-        <li><a class="nav-link" href="#" target="_blank" title="Twitter"><i class="fa fa-twitter fa-4x bevel"></i><span>Twitter</span></a></li>
-    </ul>
+    <div id="socialicons">
+<div class="socialicon">
+<div class="dribbblecolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-dribbble dribbble"></i>
+</div> 
+</div>
+<div class="socialicon">
+<div class="facebookcolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-facebook-square facebook"></i>
+</div> 
+</div>
+<div class="socialicon">
+<div class="googlecolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-google-plus-square google"></i>
+</div> 
+</div>
+<div class="socialicon">
+<div class="flickrcolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-flickr flickr"></i>
+</div> 
+</div>                  
+<div class="socialicon">
+<div class="pinterestcolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-pinterest-square pinterest"></i>
+</div> 
+</div>
+<div class="socialicon">
+<div class="githubcolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-github-alt github"></i>
+</div> 
+</div> 
+<div class="socialicon">
+<div class="linkedincolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-linkedin-square linkedin"></i>
+</div> 
+</div>
+<div class="socialicon">
+<div class="youtubecolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-youtube-square youtube"></i>
+</div> 
+</div>
+<div class="socialicon">
+<div class="tumblrcolor socialiconcircle1"></div>
+<div class="socialiconcircle2">
+<i class="fa icons fa-tumblr-square tumblr"></i>
+</div> 
+</div>       
+</div>
 	    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
